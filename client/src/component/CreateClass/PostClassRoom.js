@@ -15,7 +15,7 @@ export const PostClassRomm =
         headers: { "Content-Type": "application/json" },
       };
       const { data } = await axios.post(
-        "/api",
+        "https://student-management-system-teacher-panel.vercel.app/api",
         {
           userId,
           courseName,

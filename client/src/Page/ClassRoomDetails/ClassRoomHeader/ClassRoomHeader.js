@@ -14,7 +14,7 @@ export const ClassRoomHeader = ({ classRoom }) => {
   };
   const { id } = useParams();
   const deleteClassHandel = async () => {
-    await axios.delete(`/api/${id}`);
+    await axios.delete(`https://student-management-system-teacher-panel.vercel.app/api/${id}`);
     navigate("/");
   };
   return (

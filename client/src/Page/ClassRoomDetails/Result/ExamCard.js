@@ -9,7 +9,7 @@ const ExamCard = ({ items }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await axios.get(`/api/exam/${items}`);
+      const res = await axios.get(`https://student-management-system-teacher-panel.vercel.app/api/exam/${items}`);
 
       setData(res.data);
     };

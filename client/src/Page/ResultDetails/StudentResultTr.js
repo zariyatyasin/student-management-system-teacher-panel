@@ -9,7 +9,7 @@ const StudentResultTr = ({ item, value, setValue }) => {
   const [studentResult, setStudentResult] = useState();
   const { isLoading, error, data } = useQuery({
     queryKey: ["students", item],
-    queryFn: () => axios.get(`/api/student/${item}`),
+    queryFn: () => axios.get(`https://student-management-system-teacher-panel.vercel.app/api/student/${item}`),
   });
 
   //   const [data, setData] = useState();

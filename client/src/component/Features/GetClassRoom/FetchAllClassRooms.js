@@ -9,7 +9,7 @@ import { Prevous_Classes } from "../CreateClass/CreateClassSlice";
 export const FetchAllClassRooms = async (dispatch, userID) => {
   try {
     dispatch(classRoom_Request);
-    const getAllClassRoomData = await axios.get("/api");
+    const getAllClassRoomData = await axios.get("https://student-management-system-teacher-panel.vercel.app/api");
 
     const userCreatedClasses = getAllClassRoomData.data.filter(
       (item) => item.userId === userID

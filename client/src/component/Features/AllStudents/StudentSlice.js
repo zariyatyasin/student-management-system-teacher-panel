@@ -4,8 +4,8 @@ import axios from "axios";
 export const FetchAllStudent = createAsyncThunk(
   "student/FetchAllStudent",
   async (data) => {
-    console.log("i'm from sli", data);
-    const res = await axios.get(`/api/student/?p=${data}`);
+   
+    const res = await axios.get(`https://student-management-system-teacher-panel.vercel.app/api/student/?p=${data}`);
     return res?.data;
   }
 );

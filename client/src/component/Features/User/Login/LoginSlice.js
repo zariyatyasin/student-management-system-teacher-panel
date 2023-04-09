@@ -9,7 +9,7 @@ export const FeatchLogin = createAsyncThunk(
         headers: { "Content-Type": "application/json" },
       };
       const user = await axios.post(
-        "/api/user/login",
+        "https://student-management-system-teacher-panel.vercel.app/api/user/login",
         {
           email,
           password,

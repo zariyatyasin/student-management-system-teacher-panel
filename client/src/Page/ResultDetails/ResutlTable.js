@@ -16,7 +16,7 @@ const ResutlTable = () => {
   };
   const { data } = useQuery({
     queryKey: ["enrollStudents"],
-    queryFn: () => axios.get(`/api/${id}`),
+    queryFn: () => axios.get(`https://student-management-system-teacher-panel.vercel.app/api/${id}`),
   });
 
   const onSubmit = async (e) => {

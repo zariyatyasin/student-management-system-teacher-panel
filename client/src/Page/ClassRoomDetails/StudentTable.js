@@ -13,7 +13,7 @@ const StudentTable = () => {
 
   useEffect(() => {
     const FetchAllStudent = async () => {
-      const res = await axios.get(`/api/student/?q=${query}`);
+      const res = await axios.get(`https://student-management-system-teacher-panel.vercel.app/api/student/?q=${query}`);
 
       if (res.status === 200) {
         setIsLoading(false);

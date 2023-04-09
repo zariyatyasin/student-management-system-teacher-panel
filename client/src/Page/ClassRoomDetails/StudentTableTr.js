@@ -13,7 +13,7 @@ export const StudentTableTr = ({ item }) => {
   }, [classRoomid.id]);
   const addStudentHandler = async () => {
     try {
-      await axios.put(`/api/${classRoomid.id}/enroll`, {
+      await axios.put(`https://student-management-system-teacher-panel.vercel.app/api/${classRoomid.id}/enroll`, {
         userId: item._id,
       });
     } catch (error) {

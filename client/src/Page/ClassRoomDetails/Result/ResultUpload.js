@@ -10,7 +10,7 @@ const ResultUpload = () => {
   const { id } = useParams();
   const { isLoading, error, data } = useQuery({
     queryKey: ["createdExam"],
-    queryFn: () => axios.get(`/api/${id}`),
+    queryFn: () => axios.get(`https://student-management-system-teacher-panel.vercel.app/api/${id}`),
   });
   // useEffect(() => {
   //   const fetchData = async () => {

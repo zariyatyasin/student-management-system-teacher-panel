@@ -18,7 +18,7 @@ const ClassRoomDetails = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`/api/${id}`);
+        const res = await axios.get(`https://student-management-system-teacher-panel.vercel.app/api/${id}`);
 
         setClassRoom(res.data);
       } catch (error) {

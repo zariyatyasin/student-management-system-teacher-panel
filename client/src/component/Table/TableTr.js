@@ -8,7 +8,7 @@ const TableTr = ({ Student }) => {
 
   useEffect(() => {
     const fetch = async () => {
-      const res = await axios.get(`/api/student/${Student}`);
+      const res = await axios.get(`https://student-management-system-teacher-panel.vercel.app/api/student/${Student}`);
       if (res.status === 200) {
         setIsLoading(false);
       } else {
